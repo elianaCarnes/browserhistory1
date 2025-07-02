@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Open+Sans&display=swap');
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    color: darkblue;
+}
+
+body, p, li {
+    font-family: 'Open Sans', sans-serif;
+    color: darkblue;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: ivory;
+}
+
+.navbar {
+    display: none;
+}
+
+.browsers-container {
+    display: block;
+    margin-top: 0;
+}
+
+.browser-section {
+    width: auto;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+a {
+    color: darkblue;
+}
+
+img {
+    vertical-align: middle;
+}
