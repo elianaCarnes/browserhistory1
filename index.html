@@ -1,43 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>A history of browsers</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A history of browsers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>A history of browsers</h1>
-
-    <div class="navbar">
-        <a href="#introduction">Introduction</a>
-        <a href="#ie">Internet Explorer</a>
-        <a href="#firefox">Firefox</a>
-        <a href="#chrome">Chrome</a>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <ul class="navbar-nav mx-auto flex-row">
+        <li class="nav-item px-3">
+          <a class="nav-link fw-normal" href="#introduction">Introduction</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link fw-normal" href="#ie">Internet Explorer</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link fw-normal" href="#firefox">Firefox</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link fw-normal" href="#chrome">Chrome</a>
+        </li>
+      </ul>
     </div>
+  </nav>
+
+  <div class="container mt-5 pt-5">
+    <h1 class="mt-4">A history of browsers</h1>
 
     <h2 id="introduction">Introduction</h2>
-    <p>The first web browser was invented in 1990 by Tim Berners-Lee. It was called WorldWideWeb (no spaces) and was later renamed Nexus. In 1993, <a href="https://en.wikipedia.org/wiki/Mosaic_(web_browser)" target="_blank">Marc Andreesen</a> created a browser that was easy to use and install with the release of Mosaic (later Netscape), "the world's first popular browser", which made the World Wide Web system easy to use and more accessible to the average person. Andreesen's browser sparked the internet boom of the 1990s. These are the two major milestones in the history of the Web.</p>
+    <p>The first web browser was invented in 1990 by <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">Tim Berners-Lee</a>. It was called WorldWideWeb (no spaces) and was later renamed Nexus. In 1993, <a href="https://en.wikipedia.org/wiki/Mosaic_(web_browser)" target="_blank">Marc Andreesen</a> created a browser that was easy to use and install with the release of Mosaic (later Netscape), "the world's first popular browser", which made the World Wide Web system easy to use and more accessible to the average person. Andreesen's browser sparked the internet boom of the 1990s.</p>
     <p>The wars put the Web in the hands of millions of ordinary PC users, but showed how commercialization of the Web could stymie standards efforts. Both Microsoft and Netscape liberally incorporated proprietary extensions to HTML in their products, and tried to gain an edge by product differentiation, leading to the acceptance of the Cascading Style Sheets proposed by Hakon Wium Lie over Netscape's JavaScript Style Sheets (JSSS) by <a href="https://www.w3.org/" target="_blank">W3C</a>.</p>
 
-    <div class="browsers-container">
-        <div class="browser-section" id="ie">
-            <h2>A brief history of IE</h2>
-            <p><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Internet_Explorer_10%2B11_logo.svg" width="100" alt="Internet Explorer Logo">The first Internet Explorer was derived from Spyglass Mosaic. The original Mosaic came from NCSA, but since NCSA was a public entity it relied on Spyglass as its commercial licensing partner. Spyglass in turn delivered two versions of the Mosaic browser to Microsoft, one wholly based on the NCSA source code, and another engineered from scratch but conceptually modeled on the NCSA browser.</p>
-            <p>In March 2009 Version 8.0 was released, with the first public beta having been released on March 5, 2008. <a href="https://en.wikipedia.org/wiki/Internet_Explorer_8" target="_blank">IE8</a> offered better support for web standards than previous versions.</p>
-        </div>
+    <div class="row g-4">
+      <div class="col-md" id="ie">
+        <h2>A brief history of Internet Explorer</h2>
+        <p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Internet_Explorer_10%2B11_logo.svg" width="100" alt="Internet Explorer Logo" class="img-fluid float-start me-2">
+          The first Internet Explorer was derived from Spyglass Mosaic. The original Mosaic came from <a href="https://en.wikipedia.org/wiki/NCSA_Mosaic" target="_blank">NCSA</a>, but since NCSA was a public entity it relied on Spyglass as its commercial licensing partner. Spyglass in turn delivered two versions of the Mosaic browser to Microsoft, one wholly based on the NCSA source code, and another engineered from scratch but conceptually modeled on the NCSA browser.
+        </p>
+        <p>In March 2009 Version 8.0 was released. <a href="https://en.wikipedia.org/wiki/Internet_Explorer_8" target="_blank">IE8</a> offered better support for web standards than previous versions.</p>
+      </div>
 
-        <div class="browser-section" id="firefox">
-            <h2>A brief history of Firefox</h2>
-            <p><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Mozilla_Firefox_logo_2013.png" width="100" alt="Firefox Logo">The project which became <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox</a> started as an experimental branch of the Mozilla Suite called m/b (or mozilla/browser). After it had been sufficiently developed, binaries for public testing appeared in September 2002 under the name Phoenix.</p>
-            <p>Firefox 23 was released on August 6, 2013. It includes an updated Firefox logo, mixed content blocking enabled by default to defend against man-in-the-middle attacks.</p>
-        </div>
+      <div class="col-md" id="firefox">
+        <h2>A brief history of Firefox</h2>
+        <p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Mozilla_Firefox_logo_2013.png" width="100" alt="Firefox Logo" class="img-fluid float-start me-2">
+          The project which became <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox</a> started as an experimental branch of the Mozilla Suite called m/b (or mozilla/browser). After it had been sufficiently developed, binaries for public testing appeared in September 2002 under the name Phoenix.
+        </p>
+        <p>Firefox 23 was released on August 6, 2013. It included an updated Firefox logo, mixed content blocking enabled by default to defend against man-in-the-middle attacks.</p>
+      </div>
 
-        <div class="browser-section" id="chrome">
-            <h2>A brief history of Chrome</h2>
-            <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Google_Chrome_icon_%28February_2022%29.svg" width="100" alt="Chrome Logo">Google's Eric Schmidt opposed the development of an independent web browser for six years. He stated that "at the time, Google was a small company," and he did not want to go through "bruising browser wars."</p>
-            <p>In December 2010 Google announced that to make it easier for businesses to use Chrome they would provide an official Chrome MSI package. <a href="https://www.google.com/chrome/" target="_blank">Google Chrome's official site</a>.</p>
-        </div>
+      <div class="col-md" id="chrome">
+        <h2>A brief history of Chrome</h2>
+        <p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Google_Chrome_icon_%28February_2022%29.svg" width="100" alt="Chrome Logo" class="img-fluid float-start me-2">
+          Google's Eric Schmidt opposed the development of an independent web browser for six years. He stated that "at the time, Google was a small company," and he did not want to go through "bruising browser wars."
+        </p>
+        <p>In December 2010 <a href="https://www.google.com/chrome/" target="_blank">Google</a> announced an official MSI Chrome package for business use.</p>
+      </div>
     </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
